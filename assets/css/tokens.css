@@ -16,6 +16,15 @@
     --leading-body: 1.6;
     --leading-data: 1.4;
 
+    /* Font Weights */
+    --weight-extralight: 200;
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+
     /* Responsive Font Sizes (Mobile defaults) */
     --font-heading-xl: 1.75rem;    /* 28px */
     --font-heading-lg: 1.375rem;   /* 22px */
