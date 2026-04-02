@@ -40,7 +40,7 @@ This project is optimized for deployment on [Vercel](https://vercel.com).
 3. Vercel will automatically detect Nuxt and configure the build settings.
 4. Set any environment variables required in the Vercel Dashboard.
 
-## Project Tasks
+## Project Deliverables
 
 Track the progress of design system and feature implementation below.
 
@@ -48,14 +48,13 @@ Track the progress of design system and feature implementation below.
 
 > Foundation-level visual variables that power the entire design system.
 
-- [ ] Color Palette
-- [ ] Typography (Inter font, type scale)
-- [ ] Border Radius
-- [ ] Line heights
-- [ ] Spacing Scale
-- [ ] Border Radius
-- [ ] Elevation
-- [ ] Responsive Breakpoints
+- [x] Color Palette
+- [x] Typography (Manrope & Fira Code)
+- [x] Border Radius
+- [x] Line heights
+- [x] Spacing Scale
+- [x] Elevation
+- [x] Responsive Breakpoints
 
 ---
 

@@ -1,51 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Fira+Code:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-    --radius: 0.5rem;
-  }
+    /* Font Families */
+    --font-heading: "Manrope", sans-serif;
+    --font-body: "Manrope", sans-serif;
+    --font-data: "Fira Code", monospace;
 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    /* Line Heights */
+    --leading-heading: 1.2;
+    --leading-body: 1.6;
+    --leading-data: 1.4;
+
+    /* Responsive Font Sizes (Mobile defaults) */
+    --font-heading-xl: 1.75rem;    /* 28px */
+    --font-heading-lg: 1.375rem;   /* 22px */
+    --font-heading-md: 1.125rem;   /* 18px */
+    --font-body-lg: 1rem;          /* 16px */
+    --font-body-sm: 0.875rem;      /* 14px */
+    --font-label: 0.75rem;         /* 12px */
+
+    /* Data Sizes (Mobile defaults) */
+    --font-data-lg: 1.375rem;      /* 22px */
+    --font-data-md: 1rem;          /* 16px */
+    --font-data-sm: 0.875rem;      /* 14px */
+
+    /* Desktop overrides */
+    @media (min-width: 1024px) {
+      --font-heading-xl: 2.25rem;  /* 36px */
+      --font-heading-lg: 1.75rem;   /* 28px */
+      --font-heading-md: 1.25rem;   /* 20px */
+      --font-data-lg: 1.75rem;      /* 28px */
+    }
+
+    --background: var(--gray-1);
+    --foreground: #053856;
+    --card: var(--white);
+    --card-foreground: #053856;
+    --popover: var(--white);
+    --popover-foreground: #053856;
+
+    /* Neutrals */
+    --white: #FFFFFF;
+    --gray-1: #F4F8F8;
+    --gray-2: #E9EDED;
+    --gray-3: #DFE3E3;
+
+    /* Brand Palette */
+    --green-vivid: #04FF88;
+    --green-soft: #17E685;
+    --blue-deep: #053856;
+    --blue-dark: #0D2D44;
+    --blue-mid: #004668;
+    --blue-bright: #007DA5;
+
+    /* Secondary Palette */
+    --teal: #25A7A7;
+    --green-solid: #00AA5F;
+    --purple: #6F346F;
+    --orange: #F39500;
+    --red-orange: #FF6027;
+
+    /* Product Map */
+    --product-pay: var(--green-vivid);
+    --product-circle: var(--teal);
+    --product-till: var(--orange);
+    --product-float: var(--purple);
+    --product-rating: var(--blue-deep);
+
+    /* Semantic Variables */
+    --primary: var(--blue-deep);
+    --primary-foreground: #F8FAFC;
+
+    --secondary: var(--blue-mid);
+    --secondary-foreground: #F8FAFC;
+
+    --muted: var(--gray-3);
+    --muted-foreground: #64748B;
+
+    --accent: var(--green-vivid);
+    --accent-foreground: #053856;
+
+    --destructive: var(--red-orange);
+    --destructive-foreground: #F8FAFC;
+
+    --border: var(--gray-2);
+    --input: var(--gray-2);
+    --ring: var(--blue-deep);
+
+    /* Border Radius tokens */
+    --radius-sm: 0.25rem;   /* 4px */
+    --radius-md: 0.5rem;    /* 8px */
+    --radius-lg: 0.75rem;   /* 12px */
+    --radius-full: 9999px;
+
+    --radius: var(--radius-md);
+
+    /* Elevation tokens */
+    --shadow-0: none;
+    --shadow-1: 0 1px 3px rgba(0,0,0,0.08);   /* Level 1: Cards */
+    --shadow-2: 0 4px 12px rgba(0,0,0,0.12);  /* Level 2: Modals */
+    --shadow-3: 0 8px 24px rgba(0,0,0,0.16);  /* Level 3: Toasts */
   }
 }
 
@@ -53,6 +112,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
