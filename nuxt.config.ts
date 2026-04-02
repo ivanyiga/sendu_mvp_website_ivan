@@ -2,6 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  app: {
+    head: {
+      title: 'Sendu',
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/sendu-master-favicon-deep-blue.svg', media: '(prefers-color-scheme: light)' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/sendu-master-favicon-white.svg', media: '(prefers-color-scheme: dark)' }
+      ]
+    }
+  },
   css: ['~/assets/css/tokens.css'],
   modules: [
     '@nuxtjs/tailwindcss',
