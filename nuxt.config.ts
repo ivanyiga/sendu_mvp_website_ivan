@@ -6,8 +6,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Sendu',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/sendu-master-favicon-deep-blue.svg', media: '(prefers-color-scheme: light)' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/sendu-master-favicon-white.svg', media: '(prefers-color-scheme: dark)' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon-deep-blue.svg', media: '(prefers-color-scheme: light)' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon-white.svg', media: '(prefers-color-scheme: dark)' }
       ]
     }
   },

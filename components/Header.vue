@@ -34,11 +34,11 @@ const closeMenu = () => {
     class="sticky top-0 z-[100] w-full bg-white border-b border-gray-2 transition-all duration-200"
     :class="[isMenuOpen ? 'h-full fixed' : 'h-[56px] lg:h-[72px]']"
   >
-    <div class="container h-full flex items-center justify-between px-5 md:px-6 lg:px-12">
+    <div class="h-full flex items-center justify-between px-5 md:px-6 lg:px-12">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center" @click="closeMenu">
         <img 
-          src="/sendu-logo-deep-blue.svg" 
+          src="/logo-sendu.svg" 
           alt="Sendu Logo" 
           class="h-[24px] lg:h-[28px] w-auto transition-all"
         />
