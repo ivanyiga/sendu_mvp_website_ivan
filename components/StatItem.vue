@@ -10,12 +10,12 @@ defineProps<Props>();
 <template>
   <div class="flex flex-col items-center text-center">
     <!-- Number -->
-    <span class="font-mono text-data-lg text-blue-deep uppercase">
+    <span class="font-mono text-data-lg text-blue-deep">
       {{ number }}
     </span>
     
     <!-- Label -->
-    <p class="font-sans text-body-sm text-blue-deep/65 mt-1 max-w-[200px]">
+    <p class="font-sans text-body-sm text-blue-deep opacity-65 mt-[4px] max-w-[200px]">
       {{ label }}
     </p>
   </div>

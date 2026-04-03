@@ -20,5 +20,4 @@ withDefaults(defineProps<Props>(), {
 </template>
 
 <style scoped>
-/* Individual styles if needed, but Tailwind classes cover most specs */
 </style>
