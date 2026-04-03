@@ -1,0 +1,92 @@
+<script setup lang="ts">
+import { computed } from 'vue';
+
+interface Props {
+  name: string;
+  title: string;
+  credential?: string;
+  photoUrl?: string;
+  linkedInUrl?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  credential: '',
+  photoUrl: '',
+  linkedInUrl: '#',
+});
+
+// Logic to extract initials from name
+const initials = computed(() => {
+  if (!props.name) return '';
+  const names = props.name.trim().split(' ');
+  if (names.length >= 2) {
+    return (names[0][0] + names[names.length - 1][0]).toUpperCase();
+  }
+  return names[0][0].toUpperCase();
+});
+</script>
+
+<template>
+  <div class="group bg-white rounded-lg shadow-elevation-1 overflow-hidden transition-all duration-300 hover:shadow-elevation-2">
+    <!-- Media Section -->
+    <div class="aspect-square bg-gray-2 relative overflow-hidden flex items-center justify-center">
+      <img 
+        v-if="photoUrl"
+        :src="photoUrl" 
+        :alt="name"
+        class="w-full h-full object-cover"
+      />
+      <!-- Initials Placeholder -->
+      <span 
+        v-else 
+        class="font-sans font-bold text-[32px] text-blue-deep opacity-30 select-none"
+      >
+        {{ initials }}
+      </span>
+    </div>
+
+    <!-- Content Section -->
+    <div class="p-[20px] flex flex-col min-h-[140px]">
+      <!-- Name -->
+      <h3 class="font-sans font-bold text-[16px] text-blue-deep mb-[2px]">
+        {{ name }}
+      </h3>
+      
+      <!-- Title -->
+      <p class="font-sans font-semibold text-[13px] text-blue-bright mb-2">
+        {{ title }}
+      </p>
+      
+      <!-- Credential -->
+      <p v-if="credential" class="font-sans font-normal text-[13px] text-blue-deep opacity-65 leading-[1.5] mb-4">
+        {{ credential }}
+      </p>
+
+      <!-- Spacer -->
+      <div class="flex-grow"></div>
+
+      <!-- Social Icon -->
+      <a 
+        v-if="linkedInUrl"
+        :href="linkedInUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block text-blue-deep opacity-40 hover:text-blue-bright hover:opacity-100 transition-all duration-200"
+        title="LinkedIn Profile"
+      >
+        <svg 
+          viewBox="0 0 24 24" 
+          width="16" 
+          height="16" 
+          fill="currentColor"
+        >
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+/* Scoped styles kept minimal due to Tailwind presence */
+</style>
