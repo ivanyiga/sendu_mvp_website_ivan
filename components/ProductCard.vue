@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import * as LucideIcons from 'lucide-vue-next';
 import { computed } from 'vue';
 
 type Status = 'LIVE' | 'PILOT' | 'BUILDING' | 'ACTIVE';
@@ -7,19 +6,14 @@ type Status = 'LIVE' | 'PILOT' | 'BUILDING' | 'ACTIVE';
 interface Props {
   title: string;
   body: string;
-  icon: string;
+  icon: string; // This will now be the SVG filename in /public
   status: Status;
-  iconColor?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  iconColor: 'currentColor',
-});
+const props = defineProps<Props>();
 
-// Dynamically resolve the Lucide icon component
-const IconComponent = computed(() => {
-  return (LucideIcons as any)[props.icon] || LucideIcons.HelpCircle;
-});
+// Path to the SVG in the public folder
+const iconPath = computed(() => `/${props.icon}`);
 </script>
 
 <template>
@@ -31,12 +25,12 @@ const IconComponent = computed(() => {
       <StatusBadge :status="status" />
     </div>
 
-    <!-- Product Icon (24px) -->
-    <div class="mb-4" :style="{ color: iconColor }">
-      <component 
-        :is="IconComponent" 
-        :size="24" 
-        stroke-width="2"
+    <!-- Product Icon (24px height) -->
+    <div class="mb-4">
+      <img 
+        :src="iconPath" 
+        :alt="title"
+        class="h-6 w-auto block"
       />
     </div>
 
@@ -46,7 +40,7 @@ const IconComponent = computed(() => {
     </h3>
 
     <!-- Body (14px Regular, 70% opacity, 1.6 line-height) -->
-    <p class="font-sans font-normal text-[14px] text-blue-deep/70 leading-[1.6]">
+    <p class="font-sans font-normal text-[14px] text-blue-deep opacity-70 leading-[1.6]">
       {{ body }}
     </p>
   </div>
