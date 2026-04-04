@@ -18,8 +18,15 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const truncatedExcerpt = computed(() => {
-  if (props.excerpt.length <= 120) return props.excerpt;
-  return props.excerpt.slice(0, 120).trim() + '...';
+  const limit = 120;
+  if (props.excerpt.length <= limit) return props.excerpt;
+  
+  // Truncate and find last space to avoid cutting words
+  const subString = props.excerpt.slice(0, limit);
+  const lastSpace = subString.lastIndexOf(' ');
+  const finishedString = lastSpace > 0 ? subString.slice(0, lastSpace) : subString;
+  
+  return finishedString.trim() + '...';
 });
 
 const tagStyles = computed(() => {
@@ -44,8 +51,9 @@ const tagStyles = computed(() => {
 <template>
   <NuxtLink 
     :to="to" 
-    class="group block bg-white rounded-lg shadow-elevation-1 overflow-hidden transition-all duration-200 hover:shadow-elevation-2"
+    class="group block bg-white rounded-lg shadow-level-1 overflow-hidden transition-all duration-200 ease-in-out hover:shadow-level-2 cursor-pointer"
   >
+    <!-- Thumbnail (16:9, Object Fit Cover) -->
     <div class="aspect-video bg-gray-2 relative overflow-hidden">
       <img 
         v-if="thumbnailUrl"
@@ -59,28 +67,28 @@ const tagStyles = computed(() => {
       </div>
     </div>
 
-    <!-- Content Area -->
-    <div class="p-5 flex flex-col">
-      <!-- Tag -->
+    <!-- Content Area (20px Padding) -->
+    <div class="p-6 flex flex-col">
+      <!-- Tag (Manrope 600 12px, 4px 8px padding, 4px radius) -->
       <span 
-        class="inline-flex items-center self-start h-[22px] px-2 rounded font-sans font-bold text-[10px] uppercase tracking-[0.05em] mb-2 transition-colors"
+        class="inline-flex items-center self-start px-2 py-1 rounded-sm font-sans font-semibold text-[12px] mb-2 transition-colors"
         :style="{ backgroundColor: tagStyles.bg, color: tagStyles.text }"
       >
         {{ tag }}
       </span>
 
-      <!-- Title -->
+      <!-- Title (Manrope 700 16px, Blue Deep, 8px margin-bottom) -->
       <h3 class="font-sans font-bold text-[16px] text-blue-deep mb-2 transition-colors group-hover:text-blue-bright">
         {{ title }}
       </h3>
 
-      <!-- Date -->
+      <!-- Date (Manrope 400 12px, Blue Deep 50% opacity, 8px margin-bottom) -->
       <p class="font-sans font-normal text-[12px] text-blue-deep opacity-50 mb-2">
         {{ date }}
       </p>
 
-      <!-- Excerpt -->
-      <p class="font-sans font-normal text-[14px] text-blue-deep opacity-65 leading-relaxed">
+      <!-- Excerpt (Manrope 400 14px, Line Height 1.6, Blue Deep 65% opacity) -->
+      <p class="font-sans font-normal text-[14px] text-blue-deep opacity-65 leading-[1.6]">
         {{ truncatedExcerpt }}
       </p>
     </div>

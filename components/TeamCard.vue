@@ -27,7 +27,7 @@ const initials = computed(() => {
 </script>
 
 <template>
-  <div class="group bg-white rounded-lg shadow-elevation-1 overflow-hidden transition-all duration-300 hover:shadow-elevation-2">
+  <div class="group bg-white rounded-lg shadow-level-1 overflow-hidden transition-all duration-300">
     <!-- Media Section -->
     <div class="aspect-square bg-gray-2 relative overflow-hidden flex items-center justify-center">
       <img 

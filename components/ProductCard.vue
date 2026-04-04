@@ -18,7 +18,7 @@ const iconPath = computed(() => `/${props.icon}`);
 
 <template>
   <div 
-    class="relative p-6 bg-white rounded-lg shadow-elevation-1 transition-all duration-200 hover:shadow-elevation-2 hover:-translate-y-[2px] group overflow-hidden"
+    class="relative p-6 bg-white rounded-lg shadow-level-1 transition-all duration-200 hover:shadow-level-2 hover:-translate-y-[2px] group overflow-hidden"
   >
     <!-- Status Badge (Top-Right, 8px offset) -->
     <div class="absolute top-2 right-2 z-10">
