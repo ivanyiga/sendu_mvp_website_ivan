@@ -34,7 +34,7 @@ const products = [
 </script>
 
 <template>
-  <section class="w-full bg-gray-1 pt-16 pb-12 lg:pt-24 lg:pb-16 px-4 lg:px-0">
+  <section class="w-full bg-gray-1 pt-16 pb-12 lg:pt-24 lg:pb-16 px-[20px] md:px-[24px] lg:px-0">
     <div class="max-w-[1120px] mx-auto">
       <!-- Section Header -->
       <div class="mb-12">

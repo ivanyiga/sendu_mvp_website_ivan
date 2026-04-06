@@ -35,6 +35,7 @@ const initials = computed(() => {
         :src="photoUrl" 
         :alt="name"
         class="w-full h-full object-cover"
+        loading="lazy"
       />
       <!-- Initials Placeholder -->
       <span 

@@ -3,17 +3,15 @@
 </script>
 
 <template>
-  <section class="w-full bg-blue-deep text-white text-center pt-16 pb-12 lg:pt-24 lg:pb-16 px-5 transition-all">
-    <div class="max-w-[800px] px-[16px] lg:px-0 mx-auto flex flex-col items-center">
+  <section class="relative w-full bg-blue-deep text-white text-center pt-16 pb-12 lg:pt-24 lg:pb-16 px-5 transition-all overflow-hidden hero-bg">
+    <!-- Optional: Add a subtle overlay to ensure blue-deep remains the dominant color -->
+    <div class="absolute lg:hidden inset-0 bg-blue-deep opacity-80 z-0 pointer-events-none"></div>
+    
+    <div class="relative z-10 max-w-[800px] px-[20px] lg:px-0 mx-auto flex flex-col items-center">
       <!-- Headline -->
       <h1 class="font-sans text-heading-xl text-white">
         Build the rails that make working people visible.
       </h1>
-
-      <!-- Sub-headline -->
-      <!-- <p class="font-sans text-heading-md text-white opacity-70 mt-[12px]">
-        The borderless financial platform for everyone.
-      </p> -->
 
       <!-- Body -->
       <p class="font-sans text-body-lg text-white opacity-70 mt-[24px] max-w-[640px]">
@@ -33,5 +31,11 @@
 </template>
 
 <style scoped>
-/* Individual styles if needed, but Tailwind classes cover most specs */
+.hero-bg {
+  /* Using a combination of background color and image with blending/overlay */
+  background-image: url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 </style>

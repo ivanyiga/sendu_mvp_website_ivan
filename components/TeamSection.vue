@@ -4,47 +4,53 @@ const team = [
     name: "Byron Biroli",
     title: "MD, Founder",
     credential: "Infrastructure delivery at scale. NASA, CERN, UK government, enterprise telecoms.",
+    photoUrl: "/team-byron.jpg"
   },
   {
     name: "Magdalena Kurylowicz",
     title: "COO, Head of Risk, Co-Founder",
-    credential: "Cambridge Law. AML, anti-bribery, and anti-corruption compliance. Operations and risk management.",
+    credential: "Cambridge Law. AML, anti-bribery, and compliance. Data and risk management.",
+    photoUrl: "/team-magdalena.jpg"
   },
   {
-    name: "Kenneth Buhiire",
+    name: "Keneth Buhiire",
     title: "CTO",
-    credential: "Backend architecture, USSD, mobile money integration.",
+    credential: "Full stack architecture, USSD, credit intelligence and mobile money integration.",
+    photoUrl: "/team-keneth.jpg"
   },
-  {
-    name: "Rob Phillpott",
-    title: "Executive Chair",
-    credential: "Former Vodafone East Africa CEO. Built telecoms across Sub-Saharan Africa and the Middle East.",
-  },
+  // {
+  //   name: "Rob Phillpott",
+  //   title: "Executive Chair",
+  //   credential: "Former Vodafone East Africa CEO. Built telecoms across Sub-Saharan Africa and the Middle East.",
+  // },
   {
     name: "Gordian Kyomukama",
     title: "Director, Telecoms & Regulatory",
     credential: "Former MTN Uganda CTO and CEO. 30 years in telecoms.",
+    photoUrl: "/team-gordian.jpg"
   },
   {
     name: "Jacque Namwase",
     title: "Financial Growth Officer",
     credential: "Sales, field lead, SACCO recruitment, direct community relationships.",
+    photoUrl: "/team-jacque.jpg"
   },
-  {
-    name: "Varghese Thambi",
-    title: "Advisor, Bank Partnerships",
-    credential: "Former CEO Diamond Trust Bank Uganda. Leads all bank partnership relationships.",
-  },
+  // {
+  //   name: "Varghese Thambi",
+  //   title: "Advisor, Bank Partnerships",
+  //   credential: "Former CEO Diamond Trust Bank Uganda. Leads all bank partnership relationships.",
+  // },
   {
     name: "Grace Musoke Lwanga",
-    title: "Advisor",
-    credential: "Pioneer Chairman of PRIDE Microfinance.",
+    title: "Chairman",
+    credential: "Pioneer Chairman of PRIDE Microfinance. Stanbic governance.",
+    photoUrl: "/team-grace.jpg"
   }
 ];
 </script>
 
 <template>
-  <section class="w-full bg-white pt-16 pb-12 lg:pt-24 lg:pb-16 px-4 lg:px-0">
+  <section class="w-full bg-white pt-16 pb-12 lg:pt-24 lg:pb-16 px-[20px] md:px-[24px] lg:px-0">
     <div class="max-w-[1120px] mx-auto">
       <!-- Section Header -->
       <div class="mb-0">
@@ -53,7 +59,7 @@ const team = [
 
       <!-- Team Grid -->
       <div 
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-6"
       >
         <TeamCard 
           v-for="(member, index) in team" 
@@ -61,6 +67,7 @@ const team = [
           :name="member.name"
           :title="member.title"
           :credential="member.credential"
+          :photo-url="member.photoUrl"
           class="h-full"
         />
       </div>

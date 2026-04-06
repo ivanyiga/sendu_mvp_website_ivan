@@ -31,15 +31,15 @@ const closeMenu = () => {
 
 <template>
   <header 
-    class="sticky top-0 z-[100] w-full bg-white border-b border-gray-2 transition-all duration-200"
+    class="sticky top-0 z-[100] w-full bg-blue-deep border-b border-blue-deep transition-all duration-200"
     :class="[isMenuOpen ? 'h-full fixed' : 'h-[56px] lg:h-[72px]']"
   >
     <div class="h-full flex items-center justify-between px-5 md:px-6 lg:px-12">
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center" @click="closeMenu">
+      <NuxtLink to="/" class="flex items-center ml-[20px] lg:ml-0" @click="closeMenu">
         <img 
-          src="/logo-sendu.svg" 
-          alt="Sendu Logo" 
+          src="/logo-sendu-vivid-green.svg" 
+          alt="Sendu" 
           class="h-[24px] lg:h-[28px] w-auto transition-all"
         />
       </NuxtLink>
@@ -50,7 +50,7 @@ const closeMenu = () => {
           v-for="link in navLinks" 
           :key="link.to"
           :to="link.to"
-          class="font-sans font-semibold text-label lg:text-[14px] text-blue-deep hover:text-blue-bright transition-colors relative py-2"
+          class="font-sans font-semibold text-label lg:text-[14px] text-green-vivid hover:text-green-soft transition-colors relative py-2"
           active-class="text-blue-bright after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-blue-bright after:translate-y-[4px]"
         >
           {{ link.label }}
@@ -59,7 +59,7 @@ const closeMenu = () => {
 
       <!-- Mobile Hamburger -->
       <button 
-        class="lg:hidden p-2 text-blue-deep"
+        class="lg:hidden p-2 mr-[20px] text-white"
         aria-label="Toggle Menu"
         @click="toggleMenu"
       >
@@ -88,7 +88,7 @@ const closeMenu = () => {
             v-for="link in navLinks" 
             :key="link.to"
             :to="link.to"
-            class="font-sans font-semibold text-[20px] text-white hover:opacity-80 transition-opacity"
+            class="font-sans font-semibold text-[20px] text-white hover:text-opacity-50 transition-colors"
             @click="toggleMenu"
           >
             {{ link.label }}
