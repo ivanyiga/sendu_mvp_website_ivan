@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="relative w-full bg-blue-deep text-white text-center pt-16 pb-12 lg:pt-24 lg:pb-16 px-5 transition-all overflow-hidden hero-bg">
+  <section class="relative w-full lg:h-[90vh] bg-blue-deep text-white text-center pt-16 pb-12 lg:pt-24 lg:pb-[20px] px-5 transition-all overflow-hidden hero-bg">
     <!-- Optional: Add a subtle overlay to ensure blue-deep remains the dominant color -->
     <div class="absolute lg:hidden inset-0 bg-blue-deep opacity-80 z-0 pointer-events-none"></div>
     
