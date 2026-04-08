@@ -51,7 +51,7 @@ const closeMenu = () => {
           :key="link.to"
           :to="link.to"
           class="font-sans font-semibold text-label lg:text-[14px] text-green-vivid hover:text-green-soft transition-colors relative py-2"
-          active-class="text-blue-bright after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-blue-bright after:translate-y-[4px]"
+          active-class="text-blue-bright after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-green-vivid after:translate-y-[0px]"
         >
           {{ link.label }}
         </NuxtLink>
