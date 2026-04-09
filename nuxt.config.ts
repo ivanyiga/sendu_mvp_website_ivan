@@ -4,10 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'Sendu',
+      title: 'Sendu: Embedded Banking',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon-vivid-green.svg', media: '(prefers-color-scheme: light)' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon-vivid-green.svg', media: '(prefers-color-scheme: dark)' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/green-on-blue.svg' }
       ]
     }
   },

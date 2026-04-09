@@ -36,15 +36,12 @@ const closeMenu = () => {
   >
     <div class="h-full flex items-center justify-between px-5 md:px-6 lg:px-12">
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center gap-3 ml-[20px] lg:ml-0" @click="closeMenu">
+      <NuxtLink to="/" class="flex items-center ml-[20px] lg:ml-0" @click="closeMenu">
         <img 
-          src="/green-on-blue.svg" 
+          src="/logo-sendu-vivid-green.svg" 
           alt="Sendu" 
           class="h-[24px] lg:h-[28px] w-auto transition-all"
         />
-        <span class="hidden md:block font-sans font-bold text-[20px] text-green-vivid">
-          Sendu: Embedded Banking
-        </span>
       </NuxtLink>
 
       <!-- Desktop Navigation -->
