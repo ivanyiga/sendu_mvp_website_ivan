@@ -29,7 +29,7 @@ import FlowDiagram from '~/components/FlowDiagram.vue'
 const flowSteps = [
   { number: 1, label: 'Member', desc: 'Contributes via MTN MoMo or Airtel Money.' },
   { number: 2, label: 'Sendu', desc: 'Collects and confirms every transaction in real time.' },
-  { number: 3, label: 'Settlement', desc: "Funds land in the SACCO's own account. SACCOs with a licensed partner can use a trust account." },
+  { number: 3, label: 'Settlement', desc: "Two options. Funds settle directly to the SACCO's own bank account with individual member contributions tracked. Or funds settle to a Sendu-managed trust account for SACCOs without their own banking arrangement." },
   { number: 4, label: 'Ledger', desc: 'Tracks every shilling. One account per SACCO. One entry per member per cycle.' }
 ]
 
@@ -74,19 +74,19 @@ const memberFeatures = [
 // Data: Archetype cards
 const archetypes = [
   {
-    label: 'Community SACCO',
-    detail: '2,000+ members. Deposit-only. Digitising their paper ledger for the first time. Mobile money collection replaces weekly cash at the office.',
+    label: 'Community SACCO (Deposit)',
+    detail: 'Collects weekly or monthly member contributions. Paper ledger or basic spreadsheet. Mobile money replaces cash at the office. Digital reconciliation replaces manual counting.',
     status: 'active'
   },
   {
-    label: 'Community SACCO',
-    detail: '1,000+ members. Active lending programme. Needs repayment tracking, guarantor management, and credit scoring to replace committee guesswork.',
+    label: 'Community SACCO (Lending)',
+    detail: 'Collects contributions and lends from pooled capital. Needs loan application tracking, guarantor management, repayment monitoring, and credit scoring to replace committee guesswork.',
     status: 'active'
   },
   {
     label: 'Employer SACCO',
-    detail: '500 members. Payroll deduction. Dual-approval governance between the SACCO manager and HR. High smartphone penetration. Dashboard-first experience.',
-    status: 'onboarding'
+    detail: 'Payroll deduction. Dual-approval governance between SACCO manager and HR. High smartphone penetration. Dashboard-first experience.',
+    status: 'active'
   }
 ]
 
@@ -112,12 +112,12 @@ useHead({
   <div class="bg-white w-full">
     <section class="hero">
     <h1>Circle is live.</h1>
-    <h2>Digital savings group management and lending infrastructure for SACCOs in Uganda.</h2>
+    <h2>Digital savings group management and lending infrastructure for SACCOs.</h2>
     <p class="body">
-      Circle lets savings groups collect, lend, and track everything digitally.
-      Members contribute via mobile money. Managers run their group from USSD, a
-      dashboard, or a field app. SACCOs lend from their own capital. Sendu handles
-      origination, credit intelligence, and repayment tracking.
+      Circle lets savings groups collect, lend, and track everything digitally. 
+      Members contribute via mobile money. Managers run their group from USSD, 
+      a dashboard, or a field app. SACCOs lend from their own capital. 
+      Sendu handles credit intelligence and repayment tracking.
     </p>
   </section>
 </div>
@@ -128,7 +128,7 @@ useHead({
     <SectionLabel text="The Architecture" />
       <FlowDiagram
         :steps="flowSteps"
-        summary="SACCOs own the funds. SACCOs own the members. Sendu runs the rails."
+        summary="Collect. Track. Score. Lend."
       />
     </section>
   </div>
@@ -178,21 +178,25 @@ useHead({
         :status="arch.status"
       />
     </div>
+    <p class="font-sans text-body-lg text-deep-blue opacity-70 line-height-1.6 font-weight-400 text-center text-size-[16px] mt-8 lg:max-w-[720px] mx-auto">Sendu operates as a technical service provider to SACCOs. Your SACCO retains its regulatory standing and member relationships. Sendu provides the digital infrastructure: collection, reconciliation, credit scoring, and reporting. Your regulator sees a SACCO using better tools. Your members see a SACCO that works.</p>
   </section>
   </div>
 
   <!-- SECTION 6: RATING -->
   <div class="section-alt">
     <section class="section">
-    <SectionLabel text="Every Transaction Tells a Story" />
+    <SectionLabel text="Rating: the score behind every lending decision" />
       <p class="rating-intro">
-        Circle generates 30 behavioural signals per member. Contribution consistency.
-        Repayment discipline. Financial prudence. Early warning indicators. External
-        credit exposure via Credit Reference Bureau. These signals produce a score from
-        0 to 900, classified into four bands. SACCO loan committees see the score before
-        they approve. The rating grows with every cycle. Your repayment history is
-        portable. It travels with you to any participating institution. No one in Uganda
-        has done this before.
+        Circle generates 30+ behavioural signals per member. 
+        Contribution consistency. Repayment discipline. 
+        Financial prudence. Early warning indicators. 
+        Airtime and data usage patterns. 
+        Bill payment behaviour. External credit exposure via Credit Reference Bureau. 
+        These signals produce a score from 0 to 900, classified into four bands. 
+        SACCO loan committees see the score before they approve. 
+        The rating grows with every cycle. Your repayment history is portable. 
+        It travels with you to any participating institution. 
+        No one in Uganda has done this before.
       </p>
       <RatingBand :bands="ratingBands" />
       <div class="rating-cta">
@@ -206,9 +210,10 @@ useHead({
     <section class="cta-section">
     <h2>Ready to digitise your SACCO?</h2>
     <p class="body">
-      We work with community SACCOs, employer SACCOs, and cooperative savings groups
-      in Kampala and Jinja. If your members still contribute in cash and your records
-      live in a paper ledger, Circle replaces that with infrastructure your bank partner can see.
+      Your members contribute. Your committees decide. Your
+      SACCO lends. Circle gives you the infrastructure to do all of it faster, with complete records and
+      credit intelligence your board can trust. Less time on administration. Better data for every
+      lending decision.
     </p>
     <PrimaryButton to="/contact" label="Get in touch" />
   </section>
