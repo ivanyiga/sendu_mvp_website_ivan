@@ -4,19 +4,22 @@ const team = [
     name: "Byron Biroli",
     title: "MD, Founder",
     credential: "Infrastructure delivery at scale. NASA, CERN, UK government, enterprise telecoms.",
-    photoUrl: "/team-byron.jpg"
+    photoUrl: "/team-byron.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/byron-biroli/"
   },
   {
     name: "Magdalena Kurylowicz",
     title: "COO, Head of Risk, Co-Founder",
     credential: "Cambridge Law. AML, anti-bribery, and compliance. Data and risk management.",
-    photoUrl: "/team-magdalena.jpg"
+    photoUrl: "/team-magdalena.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/magdalenakurylowicz/"
   },
   {
     name: "Keneth Buhiire",
     title: "CTO",
     credential: "Full stack architecture, USSD, credit intelligence and mobile money integration.",
-    photoUrl: "/team-keneth.jpg"
+    photoUrl: "/team-keneth.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/buhiire-keneth-84802367"
   },
   // {
   //   name: "Rob Phillpott",
@@ -27,13 +30,15 @@ const team = [
     name: "Gordian Kyomukama",
     title: "Director, Telecoms & Regulatory",
     credential: "Former MTN Uganda CTO and CEO. 30 years in telecoms.",
-    photoUrl: "/team-gordian.jpg"
+    photoUrl: "/team-gordian.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/gordian-kyomukama-424b33247"
   },
   {
     name: "Jacque Namwase",
     title: "Financial Growth Officer",
     credential: "Sales, field lead, SACCO recruitment, direct community relationships.",
-    photoUrl: "/team-jacque.jpg"
+    photoUrl: "/team-jacque.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/jacque-namwase-99030641/"
   },
   // {
   //   name: "Varghese Thambi",
@@ -44,7 +49,8 @@ const team = [
     name: "Grace Musoke Lwanga",
     title: "Chairman",
     credential: "Pioneer Chairman of PRIDE Microfinance. Stanbic governance.",
-    photoUrl: "/team-grace.jpg"
+    photoUrl: "/team-grace.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/christopher-grace-musoke-lwanga-a570b15b/"
   }
 ];
 </script>
@@ -68,6 +74,7 @@ const team = [
           :title="member.title"
           :credential="member.credential"
           :photo-url="member.photoUrl"
+          :linked-in-url="member.linkedInUrl"
           class="h-full"
         />
       </div>

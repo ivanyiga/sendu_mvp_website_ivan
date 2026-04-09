@@ -23,7 +23,7 @@ const stats = [
   <section class="w-full bg-white text-blue-deep pt-16 pb-12 lg:pt-24 lg:pb-16 px-[20px] md:px-[24px] lg:px-0 transition-all">
     <div class="max-w-[1120px] mx-auto flex flex-col items-center">
       <!-- Section Header -->
-      <SectionLabel text="The Market" centered />
+      <SectionLabel text="UGANDA" centered />
 
       <!-- Stats Grid -->
       <div 
