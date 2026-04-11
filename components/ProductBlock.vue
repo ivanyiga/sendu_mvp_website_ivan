@@ -57,10 +57,10 @@ const statusClass = {
   <div class="product-block" :class="{ 'product-block--reversed': reversed }">
     <div class="product-block-inner">
       <div class="product-block-text">
-        <template v-if="typeof icon === 'string'">
+        <!-- <template v-if="typeof icon === 'string'">
           <img :src="'/' + icon" class="mb-3 h-8 w-auto block" :alt="headline" />
         </template>
-        <component v-else :is="icon" class="mb-3" :style="{ color: iconColor }" :size="32" :stroke-width="2" />
+        <component v-else :is="icon" class="mb-3" :style="{ color: iconColor }" :size="32" :stroke-width="2" /> -->
         <div>
           <span class="status-badge" :class="statusClass[status]">
             <span class="dot"></span>{{ status }}

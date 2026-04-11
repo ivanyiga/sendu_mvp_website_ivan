@@ -1,12 +1,12 @@
 <script setup>
-import { Wallet, Users, Store, RefreshCw, BarChart3, Landmark, User, ChartNoAxesColumn } from 'lucide-vue-next'
+import { Landmark, User } from 'lucide-vue-next'
 
 const steps = [
-  { label: 'Pay', icon: Wallet, colorClass: 'step-pay', iconColor: 'var(--green-vivid)' },
-  { label: 'Circle', icon: Users, colorClass: 'step-circle', iconColor: 'var(--teal)' },
-  { label: 'Till', icon: Store, colorClass: 'step-till', iconColor: 'var(--orange)' },
-  { label: 'Float', icon: RefreshCw, colorClass: 'step-float', iconColor: 'var(--purple)' },
-  { label: 'Rating', icon: ChartNoAxesColumn, colorClass: 'step-rating', iconColor: 'var(--blue-deep)' },
+  { label: 'Pay', icon: 'sendu-pay-icon.svg', colorClass: 'step-pay', iconColor: 'var(--green-vivid)' },
+  { label: 'Circle', icon: 'sendu-circle-icon.svg', colorClass: 'step-circle', iconColor: 'var(--teal)' },
+  { label: 'Till', icon: 'sendu-till-icon.svg', colorClass: 'step-till', iconColor: 'var(--orange)' },
+  { label: 'Float', icon: 'sendu-float-icon.svg', colorClass: 'step-float', iconColor: 'var(--purple)' },
+  { label: 'Rating', icon: 'sendu-rating-icon.svg', colorClass: 'step-rating', iconColor: 'var(--blue-deep)' },
   { label: 'Bank Capital', icon: Landmark, colorClass: 'step-bank', iconColor: 'var(--green-solid)' },
   { label: 'Users', icon: User, colorClass: 'step-users', iconColor: 'var(--blue-bright)' }
 ]
@@ -17,7 +17,10 @@ const steps = [
     <template v-for="(step, i) in steps" :key="step.label">
       <div class="flywheel-step" :class="step.colorClass">
         <div class="flywheel-step-icon">
-          <component :is="step.icon" :size="20" :stroke-width="2" :style="{ color: step.iconColor }" />
+          <template v-if="typeof step.icon === 'string'">
+            <img :src="'/' + step.icon" class="w-4 h-4 object-contain" :alt="step.label" />
+          </template>
+          <component v-else :is="step.icon" :size="20" :stroke-width="2" :style="{ color: step.iconColor }" />
         </div>
         <div class="flywheel-step-label">{{ step.label }}</div>
       </div>
