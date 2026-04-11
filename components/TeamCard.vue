@@ -59,9 +59,7 @@ const initials = computed(() => {
       </p>
       
       <!-- Credential -->
-      <p v-if="credential" class="font-sans font-normal text-[13px] text-blue-deep opacity-65 leading-[1.5] mb-4">
-        {{ credential }}
-      </p>
+      <p v-if="credential" class="team-card-credential font-sans font-normal text-[13px] text-blue-deep opacity-65 leading-[1.5] mb-4" v-html="credential"></p>
 
       <!-- Spacer -->
       <div class="flex-grow"></div>
@@ -89,5 +87,8 @@ const initials = computed(() => {
 </template>
 
 <style scoped>
-/* Scoped styles kept minimal due to Tailwind presence */
+.team-card-credential :deep(strong) {
+  font-weight: 700;
+  color: rgba(5, 56, 86, 1);
+}
 </style>
