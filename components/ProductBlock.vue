@@ -3,7 +3,7 @@ import SignalCallout from './SignalCallout.vue'
 
 defineProps({
   icon: {
-    type: Object,
+    type: [Object, String],
     required: true
   },
   iconColor: {
@@ -57,7 +57,10 @@ const statusClass = {
   <div class="product-block" :class="{ 'product-block--reversed': reversed }">
     <div class="product-block-inner">
       <div class="product-block-text">
-        <component :is="icon" class="mb-3" :style="{ color: iconColor }" :size="32" :stroke-width="2" />
+        <template v-if="typeof icon === 'string'">
+          <img :src="'/' + icon" class="mb-3 h-8 w-auto block" :alt="headline" />
+        </template>
+        <component v-else :is="icon" class="mb-3" :style="{ color: iconColor }" :size="32" :stroke-width="2" />
         <div>
           <span class="status-badge" :class="statusClass[status]">
             <span class="dot"></span>{{ status }}
@@ -72,7 +75,10 @@ const statusClass = {
         </div>
       </div>
       <div class="product-block-visual">
-        <component :is="icon" :style="{ color: iconColor }" :size="64" :stroke-width="1.5" />
+        <template v-if="typeof icon === 'string'">
+          <img :src="'/' + icon" class="h-16 w-auto block" :alt="headline" />
+        </template>
+        <component v-else :is="icon" :style="{ color: iconColor }" :size="64" :stroke-width="1.5" />
       </div>
     </div>
   </div>

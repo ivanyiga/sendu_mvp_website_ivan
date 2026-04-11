@@ -1,5 +1,4 @@
 <script setup>
-import { Wallet, Users, Store, RefreshCw, ChartNoAxesColumn } from 'lucide-vue-next'
 import ProductBlock from '~/components/ProductBlock.vue'
 import PlatformFlywheel from '~/components/PlatformFlywheel.vue'
 import StatementBlock from '~/components/StatementBlock.vue'
@@ -16,7 +15,7 @@ useHead({
 
 const products = [
   {
-    icon: Wallet,
+    icon: 'sendu-pay-icon.svg',
     iconColor: 'var(--green-vivid)',
     status: 'BUILDING',
     headline: 'Pay',
@@ -26,7 +25,7 @@ const products = [
     reversed: false
   },
   {
-    icon: Users,
+    icon: 'sendu-circle-icon.svg',
     iconColor: 'var(--teal)',
     status: 'LIVE',
     headline: 'Circle',
@@ -38,7 +37,7 @@ const products = [
     reversed: true
   },
   {
-    icon: Store,
+    icon: 'sendu-till-icon.svg',
     iconColor: 'var(--orange)',
     status: 'PILOT',
     headline: 'Till',
@@ -48,7 +47,7 @@ const products = [
     reversed: false
   },
   {
-    icon: RefreshCw,
+    icon: 'sendu-float-icon.svg',
     iconColor: 'var(--purple)',
     status: 'PILOT',
     headline: 'Float',
@@ -58,7 +57,7 @@ const products = [
     reversed: true
   },
   {
-    icon: ChartNoAxesColumn,
+    icon: 'sendu-rating-icon.svg',
     iconColor: 'var(--blue-deep)',
     status: 'ACTIVE',
     headline: 'Rating',
