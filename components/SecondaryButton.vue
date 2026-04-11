@@ -19,6 +19,7 @@ withDefaults(defineProps<Props>(), {
 <template>
   <NuxtLink
     v-if="to"
+    v-bind="$attrs"
     :to="to"
     class="relative inline-flex items-center justify-center h-12 px-8 rounded-full bg-transparent border-[1.5px] font-sans font-semibold text-[14px] whitespace-nowrap transition-all duration-150 ease-in-out active:scale-[0.98] disabled:cursor-not-allowed disabled:active:scale-100 w-full md:w-auto overflow-hidden group cursor-pointer"
     :class="[
@@ -32,6 +33,7 @@ withDefaults(defineProps<Props>(), {
   </NuxtLink>
   <button
     v-else
+    v-bind="$attrs"
     :type="type"
     :disabled="disabled"
     class="relative inline-flex items-center justify-center h-12 px-8 rounded-full bg-transparent border-[1.5px] font-sans font-semibold text-[14px] whitespace-nowrap transition-all duration-150 ease-in-out active:scale-[0.98] disabled:cursor-not-allowed disabled:active:scale-100 w-full md:w-auto overflow-hidden group cursor-pointer"
