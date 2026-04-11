@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "why-i-moved-to-kampala",
+    "tag": "Field",
+    "date": "30 March 2026",
+    "title": "Why I Moved to Kampala",
+    "excerpt": "I was born in Kampala. Raised in London. Spent twenty years building infrastructure for other people's projects.",
+    "body": [
+      "I was born in Kampala. Raised in London. Spent twenty years building infrastructure for other people's projects: Cable & Wireless, Coventry City of Culture, touring stages across three continents. Large-scale delivery. Complex stakeholders. Tight deadlines. Outcomes that either worked or didn't.",
+      "In 2024, I came back to Uganda and spent a year on the ground. I sat in SACCO offices and watched managers reconcile contributions by hand in paper ledgers. I spoke to boda boda drivers who move money every day through mobile money and have never qualified for a bank loan. I met agents who run out of cash by 2pm because no one rebalances their float.",
+      "The gap is obvious when you stand inside it. Uganda has 33 million mobile money users and 21 million people with dormant bank accounts. Banks have capital. Mobile money has reach. Nobody connects them.",
+      "Sendu connects them. We built the infrastructure. I moved to Kampala to deploy it.",
+      "This is not a remote project. I am here. The team is here. The SACCOs are here. Every decision gets tested in the field the same week it gets made.",
+      "I will be posting from the ground as we go. What works. What breaks. What we learn."
+    ],
+    "cta": null
+  },
+  {
+    "slug": "what-a-sacco-manager-actually-does",
+    "tag": "User Story",
+    "date": "1 April 2026",
+    "title": "What a SACCO Manager Actually Does",
+    "excerpt": "She arrives at the SACCO office at 8am on a Saturday. There are already fifteen members waiting.",
+    "body": [
+      "She arrives at the SACCO office at 8am on a Saturday. There are already fifteen members waiting. Each one has cash. Some have exact amounts. Some are short. A few want to make a partial contribution and come back next week.",
+      "She opens a hardback exercise book. She writes the member's name, the amount, the date. She counts the cash. She puts it in a metal lockbox under her desk. She will take it to the bank on Monday.",
+      "By noon, she has processed seventy contributions. The exercise book has seventy handwritten entries. If a member disputes their balance next month, the evidence is a line in a notebook.",
+      "This is how most SACCOs in Uganda operate. 2,000 members. Paper ledger. Cash in a lockbox. A bank run once a week if the manager has time.",
+      "Circle replaces the exercise book with a digital sub-ledger. Contributions arrive via mobile money and settle to a trust account at a licensed microfinance institution. The manager opens a reconciliation session, confirms each member's payment, and closes it with a PIN. Every member gets an SMS. The sweep to the bank fires automatically.",
+      "The manager still runs the SACCO. Circle gives her infrastructure that makes the work visible, auditable, and connected to a credit scoring engine that rewards her members for the discipline they already show."
+    ],
+    "cta": {
+      "label": "See how Circle works",
+      "link": "/circle"
+    }
+  },
+  {
+    "slug": "one-integration-partner",
+    "tag": "Build",
+    "date": "4 April 2026",
+    "title": "One Integration Partner",
+    "excerpt": "Early in the build, we evaluated three payment aggregator routes for Uganda.",
+    "body": [
+      "Early in the build, we evaluated three payment aggregator routes for Uganda: Africa's Talking, Pegasus, and Yo! Payments.",
+      "We chose Yo! Payments as the sole integration partner for everything: mobile money collection, USSD sessions, SMS, bank transfer sweeps, and loan disbursements. One vendor. One API surface. One contractual relationship.",
+      "The reasoning was straightforward. Yo! is a BoU-licensed PSP operating under the National Payment Systems Act 2020. They host shared USSD downstream code at zero cost. Their SMS pricing is competitive. Their settlement to bank runs on T+1. They process both MTN MoMo and Airtel Money.",
+      "A single integration partner means one codebase to maintain, one set of error handling, one reconciliation flow. When something breaks at 11pm, there is one number to call.",
+      "We kept Pegasus as a documented contingency fallback. And our roadmap includes direct MNO API integration once our Director of Telecoms and Regulatory, Gordian Kyomukama, secures the licence milestone. That transition moves us from aggregated to direct. Sovereign rails, step by step."
+    ],
+    "cta": null
+  },
+  {
+    "slug": "the-dormant-majority",
+    "tag": "Field",
+    "date": "7 April 2026",
+    "title": "The Dormant Majority",
+    "excerpt": "Uganda already solved the financial inclusion problem. Most adults have a bank account. The accounts are dormant.",
+    "body": [
+      "The standard pitch in financial inclusion goes like this: millions of people are unbanked. We need to get them bank accounts. Build products for people without access.",
+      "Uganda already solved that problem. Financial inclusion stands at 81%. Most adults have a bank account. The accounts are dormant. They were opened. They were never used.",
+      "The Bank of Uganda Governor said it publicly in 2026: 60% of Ugandan adults save money. The majority save informally. USD 10 billion per year moves outside the formal banking system. The money exists. The behaviour exists. The infrastructure to capture it does not.",
+      "This is the dormant majority. 21 million people with bank accounts, mobile money wallets, and income patterns that no institution can see. Banks cannot score them. Telcos will not share the data. The standard credit bureau file is empty.",
+      "Sendu's thesis is simple. Build the rails that capture the behaviour. Let banks see it. Let banks lend against it.",
+      "The solution is infrastructure, owned and operated in Uganda, that sits between mobile money and banking. Five products. One scoring engine. First-party data from first-party rails.",
+      "We are deploying the first product now. Circle. Live in Kampala. Three SACCOs. 3,525 members. Signals generating from day one."
+    ],
+    "cta": {
+      "label": "Read the full thesis",
+      "link": "/whitepaper"
+    }
+  }
+]
