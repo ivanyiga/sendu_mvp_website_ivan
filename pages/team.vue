@@ -66,7 +66,7 @@ const team = [
     <!-- HERO -->
     <section class="hero">
       <h1>The Team</h1>
-      <p class="body">Sendu is Ugandan-founded and Kampala-operated. Our team combines infrastructure delivery, telecoms regulation, banking, and field operations across East Africa.</p>
+      <p class="body">Sendu is Ugandan-founded and Kampala-operated. Our team combines infrastructure delivery, credit intelligence engineering, risk and compliance, telecoms leadership, microfinance governance, banking, and field operations across East Africa.</p>
     </section>
 
     <!-- TEAM GRID -->
