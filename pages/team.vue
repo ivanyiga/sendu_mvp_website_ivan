@@ -38,7 +38,7 @@ const team = [
     photo: '/team-gordian.jpg',
     initials: 'GK',
     name: 'Gordian Kyomukama',
-    title: 'Director, Telecoms & Regulatory',
+    title: 'Exec Director, Telecoms & Regulatory',
     credential: 'CEO, <strong>MTN South Sudan</strong>. CTO and Acting CEO, <strong>MTN Uganda</strong>. 30 years in telecoms operations across East and Central Africa. Built Uganda\'s mobile money rails. Leads telco integrations and regulatory relationships for Sendu.',
     linkedin: 'https://www.linkedin.com/in/gordian-kyomukama-424b33247'
   },
