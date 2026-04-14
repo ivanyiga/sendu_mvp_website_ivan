@@ -51,7 +51,7 @@ const products = [
     iconColor: 'var(--purple)',
     status: 'PILOT',
     headline: 'Float',
-    subheadline: 'Agent liquidity infrastructure.',
+    subheadline: 'Agent liquidity. Bank intelligence.',
     body: 'Agents run out of cash. 62% of mobile money users in Uganda cite agent liquidity failure as their primary challenge. Float provides earned float (tiered by performance), commercial float, daily sweep mechanics, and rebalancing via 12-16 retail offices across Kampala and Jinja. Agents earn more. Users get served. Sendu captures the signals.',
     signalText: 'Float generates: rebalancing frequency, float utilisation, liquidity management, operational discipline.',
     reversed: true
