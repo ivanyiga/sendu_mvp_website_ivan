@@ -9,7 +9,7 @@ const team = [
   },
   {
     name: "Magdalena Kurylowicz",
-    title: "COO, Head of Risk, Co-Founder",
+    title: "COO, Co-Founder",
     credential: "Cambridge Law. AML, anti-bribery, and compliance. Data and risk management.",
     photoUrl: "/team-magdalena.jpg",
     linkedInUrl: "https://www.linkedin.com/in/magdalenakurylowicz/"
