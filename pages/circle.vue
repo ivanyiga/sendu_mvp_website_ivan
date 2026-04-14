@@ -10,7 +10,16 @@
  * If a Lucide icon name does not match exactly, check https://lucide.dev/icons
  * and find the icon whose SVG paths match the reference spec.
  */
-
+// --- OG Meta ---
+useHead({
+  title: 'Sendu Circle — Digital savings group infrastructure for SACCOs',
+  meta: [
+    { property: 'og:title', content: 'Sendu Circle — Digital savings group infrastructure for SACCOs' },
+    { property: 'og:description', content: 'Circle digitises SACCO savings groups in Uganda. Mobile money collection, trust account settlement, lending origination, and behavioural credit scoring. Live in Kampala.' },
+    { property: 'og:image', content: '/og-circle.jpg' },
+    { property: 'og:type', content: 'website' },
+  ],
+})
 import {
   ClipboardCheck,
   Smartphone,
