@@ -31,7 +31,6 @@
 
     <!-- Capability Table -->
     <section class="capability-section">
-      <!-- <div class="section-label">Capabilities</div> -->
       <SectionLabel text="Capabilities" />
       <div class="capability-table">
         <div
