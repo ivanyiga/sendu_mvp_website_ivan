@@ -28,7 +28,7 @@ const team = [
   // },
   {
     name: "Gordian Kyomukama",
-    title: "Director, Telecoms & Regulatory",
+    title: "Exec Director, Telecoms & Regulatory",
     credential: "Former MTN Uganda CTO and CEO. 30 years in telecoms.",
     photoUrl: "/team-gordian.jpg",
     linkedInUrl: "https://www.linkedin.com/in/gordian-kyomukama-424b33247"
