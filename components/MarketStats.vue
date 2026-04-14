@@ -9,7 +9,7 @@ const stats = [
     label: "annual mobile money transaction volume"
   },
   {
-    number: "21 million",
+    number: "20 million",
     label: "underbanked with dormant bank accounts"
   },
   {
