@@ -127,7 +127,7 @@ const statements = [
       <section class="section">
         <div class="section-label">For Bank Partners</div>
         <div class="bank-value-headline">Activate your dormant customers.</div>
-        <div class="bank-value-body">21 million Ugandans have bank accounts they never use. Banks cannot score them. No transaction history. No payslip. No collateral. Sendu captures their financial behaviour through five integrated products and converts it into credit decisions banks can deploy capital against. Revenue share on attributed loans. SaaS licensing for the Rating API. Banks keep their customers. Sendu provides the intelligence.</div>
+        <div class="bank-value-body">20 million Ugandans have bank accounts they never use. Banks cannot score them. No transaction history. No payslip. No collateral. Sendu captures their financial behaviour through five integrated products and converts it into credit decisions banks can deploy capital against. Revenue share on attributed loans. SaaS licensing for the Rating API. Banks keep their customers. Sendu provides the intelligence.</div>
         <NuxtLink to="/banks" class="btn-primary">Learn more about bank partnerships</NuxtLink>
       </section>
     </div>
