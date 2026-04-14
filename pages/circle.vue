@@ -245,7 +245,7 @@ useHead({
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
 }
 
 .hero h2 {
@@ -279,7 +279,7 @@ useHead({
 }
 
 .section-alt {
-  background: var(--color-gray-1);
+  background: var(--gray-1);
 }
 
 .section-label {
@@ -288,7 +288,7 @@ useHead({
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-blue-bright);
+  color: var(--blue-bright);
   margin-bottom: 16px;
 }
 
@@ -343,7 +343,7 @@ useHead({
   font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 16px;
 }
 

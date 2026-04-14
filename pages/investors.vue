@@ -230,7 +230,7 @@ async function handleSubmit() {
   font: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-blue-bright);
+  color: var(--blue-bright);
   margin-bottom: 16px;
 }
 

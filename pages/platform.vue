@@ -206,7 +206,7 @@ const statements = [
   font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 16px;
 }
 .bank-value-body {

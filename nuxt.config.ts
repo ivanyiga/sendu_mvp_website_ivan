@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Sendu: Embedded Banking',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/green-on-blue.svg' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/green-on-blue.svg' },
+        { rel: 'apple-touch-icon', href: '/green-on-blue.svg' }
       ]
     }
   },

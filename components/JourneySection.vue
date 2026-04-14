@@ -1,27 +1,7 @@
 <script setup lang="ts">
-const posts = [
-  {
-    tag: "Field" as const,
-    title: "Why I Moved to Kampala",
-    date: "30 March 2026",
-    excerpt: "I was born in Kampala. Raised in London. Spent twenty years building infrastructure for other people's projects.",
-    image: "/journey-kampala-01.jpg"
-  },
-  {
-    tag: "User Story" as const,
-    title: "What a SACCO Manager Actually Does",
-    date: "1 April 2026",
-    excerpt: "She arrives at the SACCO office at 8am on a Saturday. There are already fifteen members waiting.",
-    image: "/journey-sacco-manager-01.jpg"
-  },
-  {
-    tag: "Build" as const,
-    title: "One Integration Partner",
-    date: "4 April 2026",
-    excerpt: "Early in the build, we evaluated three payment aggregator routes for Uganda.",
-    image: "/journey-yu-payments-01.jpg"
-  }
-];
+import journeyPosts from '~/data/journeyPosts.json'
+
+const posts = journeyPosts.slice(0, 3)
 </script>
 
 <template>
@@ -34,16 +14,17 @@ const posts = [
 
       <!-- Journey Grid -->
       <div 
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"
       >
         <JourneyPostCard 
-          v-for="(post, index) in posts" 
-          :key="index"
+          v-for="post in posts" 
+          :key="post.slug"
           :tag="post.tag"
           :title="post.title"
           :date="post.date"
           :excerpt="post.excerpt"
-          :image="post.image"
+          :thumbnail-url="post.thumbnail"
+          :to="`/journey/${post.slug}`"
           class="h-full"
         />
       </div>
