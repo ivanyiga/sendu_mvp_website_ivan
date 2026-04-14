@@ -15,15 +15,15 @@ const team = [
     initials: 'BB',
     name: 'Byron Biroli',
     title: 'MD, Founder',
-    credential: 'Dual UK-Ugandan. Born in Kampala, raised in London. Background in large-scale infrastructure delivery: <strong>NASA</strong>, <strong>CERN</strong>, <strong>UK government</strong> (Coventry City of Culture 2021), <strong>Cable & Wireless</strong>, enterprise telecoms. Relocated to Kampala to deploy Sendu.',
+    credential: 'Dual UK-Ugandan. Born in Kampala, raised in London. Background in large-scale infrastructure delivery: <strong>NASA</strong>, <strong>CERN</strong>, <strong>UK government</strong> (Coventry City of Culture 2021), <strong>Cable & Wireless</strong>, enterprise telecoms. Relocated to Kampala to deploy Sendu."</strong>',
     linkedin: 'https://www.linkedin.com/in/byron-biroli/'
   },
   {
     photo: '/team-magdalena.jpg',
     initials: 'MK',
     name: 'Magdalena Kurylowicz',
-    title: 'COO, Head of Risk, Co-Founder',
-    credential: 'Cambridge Law. 14 years in risk, AML, and sanctions. VP Anti-Financial Crime (EMEA), <strong>PIMCO</strong>. AVP AFC, <strong>Deutsche Bank</strong>. Risk, compliance, and forensic, <strong>KPMG UK</strong>. Leads bank partnerships and data protection for Sendu.',
+    title: 'COO, Co-Founder',
+    credential: 'Cambridge Law. 14 years in risk, AML, and sanctions. VP Anti-Financial Crime (EMEA), <strong>PIMCO</strong>. AVP AFC, <strong>Deutsche Bank</strong>. Risk, compliance, and forensic, <strong>KPMG UK</strong>. Leads bank partnerships and data protection for Sendu. <strong>DPO (Data Protection Officer)',
     linkedin: 'https://www.linkedin.com/in/magdalenakurylowicz/'
   },
   {
