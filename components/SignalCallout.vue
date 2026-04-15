@@ -29,6 +29,6 @@ defineProps({
 
 /* When inside a grey section, use white background */
 .section-alt .signal-callout {
-  background: var(--color-white);
+  background: var(--white);
 }
 </style>

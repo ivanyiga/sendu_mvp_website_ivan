@@ -31,7 +31,7 @@ const props = defineProps({
 .feature-block-icon {
   width: 24px;
   height: 24px;
-  color: var(--color-blue-bright);
+  color: var(--blue-bright);
   margin-bottom: 12px;
 }
 
@@ -39,7 +39,7 @@ const props = defineProps({
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 8px;
 }
 

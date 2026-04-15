@@ -47,8 +47,8 @@ const props = defineProps({
 .flow-step-number {
   width: 36px;
   height: 36px;
-  background: var(--color-blue-deep);
-  color: var(--color-white);
+  background: var(--blue-deep);
+  color: var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@ const props = defineProps({
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 8px;
 }
 
@@ -80,7 +80,7 @@ const props = defineProps({
   display: flex;
   align-items: center;
   padding-top: 8px;
-  /* color: var(--color-blue-bright); */
+  /* color: var(--blue-bright); */
   font-size: 20px;
   flex-shrink: 0;
   width: 32px;

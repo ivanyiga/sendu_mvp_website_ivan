@@ -17,7 +17,7 @@ defineProps({
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 8px;
 }
 .statement-block-body {

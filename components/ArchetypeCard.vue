@@ -36,8 +36,8 @@ const statusText = {
 
 <style scoped>
 .archetype-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-gray-2);
+  background: var(--white);
+  border: 1px solid var(--gray-2);
   border-radius: var(--radius-lg);
   padding: 24px;
 }
@@ -46,7 +46,7 @@ const statusText = {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
   margin-bottom: 8px;
 }
 

@@ -98,7 +98,7 @@ const team = [
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  color: var(--color-blue-deep);
+  color: var(--blue-deep);
 }
 .hero .body {
   font-family: 'Manrope', sans-serif;
