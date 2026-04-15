@@ -25,11 +25,17 @@ async function handleSubmit() {
   loading.value = true
   error.value = false
 
+  const config = useRuntimeConfig()
+  const formId = config.public.formspreeIdWhitepaper || 'YOUR_ID_HERE'
+  const endpoint = `https://formspree.io/f/${formId}`
+
   try {
-    // Ivan: replace with Formspree/Formspark endpoint from Byron
-    const response = await fetch('FORM_ENDPOINT_HERE', {
+    const response = await fetch(endpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: JSON.stringify({
         email: email.value,
         name: name.value,
@@ -62,37 +68,38 @@ async function handleSubmit() {
     <!-- FORM -->
     <div class="form-section">
       <template v-if="!submitted">
-        <FormField
-          label="Email address"
-          id="wp-email"
-          type="email"
-          placeholder="you@example.com"
-          :required="true"
-          v-model="email"
-        />
-        <FormField
-          label="Name"
-          id="wp-name"
-          type="text"
-          placeholder="Your name"
-          :required="true"
-          v-model="name"
-        />
-        <FormField
-          label="Organisation"
-          id="wp-org"
-          type="text"
-          placeholder="Company or fund name"
-          :optional="true"
-          v-model="org"
-        />
-        <PrimaryButton 
-          type="submit" 
-          @click="handleSubmit" 
-          :disabled="loading"
-          :label="loading ? 'Sending...' : 'Get the white paper'"
-          class="mt-2 !w-full"
-        />
+        <form @submit.prevent="handleSubmit">
+          <FormField
+            label="Email address"
+            id="wp-email"
+            type="email"
+            placeholder="you@example.com"
+            :required="true"
+            v-model="email"
+          />
+          <FormField
+            label="Name"
+            id="wp-name"
+            type="text"
+            placeholder="Your name"
+            :required="true"
+            v-model="name"
+          />
+          <FormField
+            label="Organisation"
+            id="wp-org"
+            type="text"
+            placeholder="Company or fund name"
+            :optional="true"
+            v-model="org"
+          />
+          <PrimaryButton 
+            type="submit" 
+            :disabled="loading"
+            :label="loading ? 'Sending...' : 'Get the white paper'"
+            class="mt-2 !w-full plausible-event-name=Whitepaper+Submission"
+          />
+        </form>
         <p v-if="error" class="form-submission-error">Something went wrong. Please email us directly at hello@sendu.ug.</p>
         <p class="form-privacy">We will only use your email to deliver the white paper. No spam. No third-party sharing.</p>
       </template>

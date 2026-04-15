@@ -89,10 +89,9 @@
           <!-- <button class="btn-primary" type="submit">Request the Deck</button> -->
           <PrimaryButton 
           type="submit" 
-          @click="handleSubmit" 
           :disabled="loading"
           :label="loading ? 'Sending...' : 'Request the Deck'"
-          class="mt-2"
+          class="mt-2 plausible-event-name=Investor+Deck+Request"
         />
         </form>
         <p v-if="formState === 'success'" class="form-success">
@@ -154,14 +153,18 @@ const form = reactive({
   note: '',
 })
 
-// TODO: Replace with actual Formspree/Formspark endpoint
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
-
 async function handleSubmit() {
+  const config = useRuntimeConfig()
+  const formId = config.public.formspreeIdInvestors || 'YOUR_ID_HERE'
+  const endpoint = `https://formspree.io/f/${formId}`
+
   try {
-    const res = await fetch(FORM_ENDPOINT, {
+    const res = await fetch(endpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: JSON.stringify({
         fullname: form.fullname,
         email: form.email,
