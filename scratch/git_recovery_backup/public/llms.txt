@@ -1,0 +1,42 @@
+# Sendu
+> Send money make progress.
+> Sendu is a Ugandan-founded embedded banking infrastructure company.
+> We build sovereign payment and savings rails that capture financial
+> behaviour and convert it into credit decisions for banks.
+> Corporate structure: Sendu Holdings Ltd (UK HoldCo) and
+> Sendu Uganda Ltd (OpsCo).
+## Core Pages
+- [Home](https://sendu.ug/): Company mission, market overview, product summary
+- [Circle](https://sendu.ug/circle): Live product. Digital savings group
+management and lending infrastructure for SACCOs in Kampala.
+- [Platform](https://sendu.ug/platform): Five-product architecture: Pay, Circle,
+Till, Float, Rating.
+- [White Paper](https://sendu.ug/whitepaper): Thesis — "The Dormant Majority."
+Uganda's financial inclusion problem is activation of dormant accounts.
+- [Team](https://sendu.ug/team): Founders, executives, and advisors.
+## For Specific Audiences
+- [For Investors](https://sendu.ug/investors): $1.5M pilot round. SEIS/EIS
+eligible. Traction summary. Deck request.
+- [For Banks](https://sendu.ug/banks): Partnership model. Rating API. Dormant
+account activation. 132-signal credit scoring.
+- [Journey](https://sendu.ug/journey): Field dispatches, user stories, and build
+updates from Kampala.
+- [Careers](https://sendu.ug/careers): Open roles in Kampala.
+## Key Facts
+- Market: Uganda. 33 million active mobile money users. 21 million underbanked
+with dormant bank accounts.
+- Products: Pay (building), Circle (live), Till (pilot), Float (pilot), Rating
+(active, MVP subset).
+- Circle deployment: 3 SACCOs in Kampala. 3,525 members. 30 behavioural signals
+per member.
+- Rating: 132 signals across 7 groups. Variance economics. gnuGrid and Compuscan
+CRB integration.
+- Revenue: Transaction fees. 60/40 revenue share on attributed loans. Rating API
+SaaS licensing.
+- MDI Partners: FINCA Uganda, Pride Microfinance.
+- Payment integration: Yo! Payments (sole provider, BoU-licensed PSP).
+- Corporate: Sendu Holdings Ltd (UK HoldCo) → Sendu Uganda Ltd (OpsCo).
+- Fundraising: $1.5M pilot round. SEIS/EIS eligible for UK qualifying investors.
+- Team: Byron Biroli (MD, Founder), Magdalena Kurylowicz (COO, Head of Risk, CoFounder), Kenneth Buhiire (CTO), Rob Phillpott (Executive Chair), Gordian
+Kyomukama (Telecoms & Regulatory), Jacque Namwase (Financial Growth Officer),
+Varghese Thambi (Advisor, Bank Partnerships).

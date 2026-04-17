@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #053856;
+      }
+
+      .cls-2 {
+        fill: #6cffb5;
+      }
+
+      .cls-3 {
+        fill: #04ff88;
+      }
+    </style>
+  </defs>
+  <g id="background">
+    <rect class="cls-1" width="512" height="512" rx="64" ry="64"/>
+  </g>
+  <g id="logo">
+    <g>
+      <path class="cls-3" d="M238.5,352.61c-64.7,0-117.14-52.45-117.14-117.14s52.45-117.14,117.14-117.14v234.29Z"/>
+      <path class="cls-3" d="M273.5,159.39c64.7,0,117.14,52.45,117.14,117.14s-52.45,117.14-117.14,117.14v-234.29Z"/>
+      <polygon class="cls-2" points="423.5 118.32 273.5 229.15 273.5 118.32 423.5 118.32"/>
+      <polygon class="cls-2" points="88.5 393.68 238.5 282.85 238.5 393.68 88.5 393.68"/>
+    </g>
+  </g>
+</svg>

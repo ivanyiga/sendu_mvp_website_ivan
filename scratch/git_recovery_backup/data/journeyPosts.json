@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "why-i-moved-to-kampala",
+    "tag": "Field",
+    "date": "30 March 2026",
+    "title": "Why I Moved to Kampala",
+    "thumbnail": "/journey-kampala-01.jpg",
+    "excerpt": "I was born in Kampala. My family left in 1980. I grew up in London and spent twenty years building infrastructure for other people.",
+    "body": [
+      "I was born in Kampala. My family left in 1980. I grew up in London and spent twenty years building infrastructure for other people.",
+      "At Cable & Wireless I sat between commercial and technical teams. I developed and sold enterprise products: unified communications, government VPNs, cloud platforms. Three 0-to-1 builds. The work was solving business problems with infrastructure, then selling the result.",
+      "After Cable & Wireless I moved into physical-digital infrastructure. £200 million of it at Pixel Artworks: large-scale immersive venues, projection systems, work with NASA and CERN, a venue programme in Bali. Then Coventry City of Culture, a £56 million programme I delivered through COVID and a funding collapse. Coordination across fragmented actors. Capital deployed where it is hard. The Butterfly Trail. Opening the Reel Store. Each project the same pattern: build the thing that connects the things that already exist.",
+      "I visited Uganda regularly. As a user, mobile money was extraordinary. Instant transfers. Float at every corner. Payments by phone in places where card terminals did not exist. In many ways it was ahead of European banking. After using it, the gaps became visible. No interoperability between providers. High fees on small transactions. Limited credit. Banks locked out of the mobile economy. Two parallel systems running side by side. Rarely intersecting.",
+      "In 2003, a Scottish consultancy called Gamos documented something unexpected. Ugandans were transferring airtime to relatives who resold it for cash. Airtime had become currency. Years before Apple Pay was born, telcos built USSD interfaces. Shop owners became agents. By 2018, Kenya had 110,000 M-Pesa agents. Forty times its ATMs. Uganda invented airtime-as-currency. Kenya built M-Pesa on it and integrated banks in 2012. Uganda remains unbuilt.",
+      "When I returned, I found a country where 66% use mobile money and 13% use banks. Infrastructure exists. Integration does not. Telcos move cash. Banks hold capital. Fintechs address symptoms. The connection between mobile money data and bank capital does not exist. Sendu is that infrastructure.",
+      "From the outside, mobile money looks solved. Two histories explain why it is incomplete. Ugandans remember the 1990s: properties seized, families displaced. Queues, manual ledgers, hours waiting, forms in triplicate. Distrust earned, still carried. Then telcos built what banks could not. Instant transfers. Float at every corner. Trust through reliability. The result is two systems that serve different needs and share nothing. Sendu connects them.",
+      "I moved to Kampala to deploy it. The team is here. The SACCOs are here. Every decision gets tested in the field the same week."
+    ],
+    "cta": null
+  },
+  {
+    "slug": "what-a-sacco-manager-actually-does",
+    "tag": "User Story",
+    "date": "1 April 2026",
+    "title": "What a SACCO Manager Actually Does",
+    "thumbnail": "/journey-sacco-manager-01.jpg",
+    "excerpt": "The manager arrives at seven on a Saturday morning. The meeting starts at nine. Two hours to prepare: print the Excel sheet, count the cashbox, reconcile last month's entries against the bank book. Thirteen hundred members. Each one contributes a different amount. The smallest is UGX 5,000. The largest is six million. Eighty percent pay in cash.",
+    "body": [
+      "The manager arrives at seven on a Saturday morning. The meeting starts at nine. Two hours to prepare: print the Excel sheet, count the cashbox, reconcile last month's entries against the bank book. Thirteen hundred members. Each one contributes a different amount. The smallest is UGX 5,000. The largest is six million. Eighty percent pay in cash.",
+      "By nine, the queue forms. Members hand over notes. The manager writes the amount against the member's name in Excel. One entry at a time. One handoff at a time. The cash pile grows. By midday, the manager closes the book, bundles the notes, and walks to the bank. The total savings book across all members sits at roughly UGX 695 million. Every shilling of it has passed through the manager's hands.",
+      "This SACCO has been lending for five years. The loan book stands at UGX 964 million. The largest single loan is UGX 30 million. Terms run twelve months at two percent per month. Every application requires four approvers and named guarantors. Repayment is deducted from the member's savings balance. When a borrower defaults, the guarantors cover the loss, or the SACCO pursues legal action. The default rate is ten percent.",
+      "The manager's biggest daily burden is administration. Every record lives in Excel. Every UMRA return is compiled by hand and filed late. Credit scoring does not exist. Lending decisions rely on personal knowledge and gut feel. When a member applies for a loan, the manager has no way to check whether that person already carries debt at another SACCO. The committee approves or declines on instinct, and the manager carries the risk of being wrong. Then there is communication. Chasing contributions, confirming payments, following up on missed repayments: all done by phone, one member at a time, across thirteen hundred people.",
+      "Ask the manager what matters most in the next six months and five items come back at the highest priority. CRB reporting for defaulters. Automatic deductions and scheduled repayment prompts. A portfolio dashboard showing loan book health, concentration, and arrears. External loan exposure detection. Transaction-based income for the manager. Every one of these is currently done by hand, by memory, or not at all.",
+      "Circle gives every contribution a digital record the moment it enters the system. The manager sees who paid, who owes, and what the SACCO's real position looks like, on a screen instead of a spreadsheet. Behind every member's name is a credit score built from over thirty behavioural signals: contribution consistency, repayment discipline, financial prudence, early warning indicators, airtime and data usage patterns. The score runs from 0 to 900 across four bands. It grows with every cycle. When a member applies for a loan, the committee sees the score before they vote. Circle also checks the Credit Reference Bureau, so the manager knows whether that member already carries debt elsewhere. The committee still decides. The difference is they decide with evidence. When a member pays, they receive an SMS immediately. When a repayment is due, the system sends the prompt. The manager's phone stays in their pocket.",
+      "The manager still runs the SACCO. The manager still knows every member's name, their business, their repayment habits, their character. The lending decisions remain with the committee. The relationships remain human. Circle is the infrastructure that makes the work visible. Every shilling traceable. Every decision recorded. Every member able to verify their own balance without making a phone call.",
+      "The queue still forms on Saturday morning. The difference is what happens after."
+    ],
+    "cta": {
+      "label": "See how Circle works",
+      "link": "/circle"
+    }
+  },
+  {
+    "slug": "security-for-managers-and-members",
+    "tag": "Build",
+    "date": "4 April 2026",
+    "title": "Security for Managers and Members",
+    "thumbnail": "/journey-security-01.jpg",
+    "excerpt": "Cash changes hands multiple times between the moment a member contributes and the moment it reaches the bank. Member to manager. Manager to cashbox. Cashbox to bank. Each handoff is a trust gap. SACCO managers told us fraud and trust are their biggest concern. The specific problem: cash handling with no audit trail. The manager handles every shilling. The members trust the manager. The manager has no way to prove that trust is warranted. Circle closes every gap in that chain.",
+    "body": [
+      "Cash changes hands multiple times between the moment a member contributes and the moment it reaches the bank. Member to manager. Manager to cashbox. Cashbox to bank. Each handoff is a trust gap. SACCO managers told us fraud and trust are their biggest concern. The specific problem: cash handling with no audit trail. The manager handles every shilling. The members trust the manager. The manager has no way to prove that trust is warranted. Circle closes every gap in that chain.",
+      "Every action in Circle requires the manager's PIN. Opening a reconciliation session. Closing it. Recording a cash contribution. The system will not write a single entry without the manager confirming their identity first. No action happens anonymously.",
+      "Every entry is linked to a specific member and a specific session. There is no batch entry, no lump sum, no ambiguity about whose money went where. The manager records UGX 50,000 against Grace Nalubega in the Tuesday session. That is exactly what the system stores.",
+      "The moment the manager records a cash entry on the field app, the system seals it with a digital signature. The signature locks the manager's identity, the member's identity, the amount, the time, and the session together. Any change after that moment is detected automatically and flagged to operations. The manager cannot disable this. It runs every time, on every entry, without exception.",
+      "When the manager closes a session, every member in that session receives an SMS confirming their contribution was received and reconciled. The manager receives a summary. This happens automatically and does not delay the session close. Members know their money arrived without needing to call or visit.",
+      "The field app and the dashboard both display the total unbanked cash in real time. This is the sum of all cash entries in open sessions that have not yet reached the bank. When that balance exceeds a threshold set by the SACCO, the system sends the manager an SMS prompting a bank deposit. No manual tracking required. The SACCO board can see the same figure.",
+      "When the manager deposits cash at the bank, the system requires the deposit amount, bank account reference, deposit slip number, date, and manager identity. Every field is mandatory. The deposit is linked to the session it came from. No deposit goes unrecorded.",
+      "Every action from session open to settlement is written to a permanent log. The system can add entries to this log. It cannot edit or delete them. The most important events are also written to a separate storage layer that is retained permanently. Every entry is timestamped and attributed to the person who performed it.",
+      "Visible money is safe money. Circle does not ask managers to change how they run their SACCOs. It gives them tools that make every shilling traceable from the moment it enters the system to the moment it settles. The manager's reputation is protected by the same infrastructure that protects the member's balance."
+    ],
+    "cta": null
+  },
+  {
+    "slug": "jenefa",
+    "tag": "User Story",
+    "date": "7 April 2026",
+    "title": "Jenefa",
+    "thumbnail": "/journey-jenefa-01.jpg",
+    "excerpt": "Uganda already solved the financial inclusion problem. Most adults have a bank account. The accounts are dormant.",
+    "body": [
+      "Women in low and middle-income countries are 36% less likely than men to own a mobile money account. That gap has widened since 2021. In Sub-Saharan Africa, the gender gap in mobile money account ownership stands at 25%, five percentage points higher than three years ago. Limited awareness and low digital financial literacy are the most significant barriers, particularly for women. The data describes a trend. Jenefa is the trend made personal.",
+      "Jenefa is 29. She has three children. She sells onions, tomatoes, garlic, spinach and other vegetables. She earns between UGX 600,000 and 800,000 a month. Around $225. Cash only.",
+      "She had an Equity Bank account. One day it was blocked. Routine compliance, a dormancy flag, the kind of thing that happens to millions of accounts across Uganda every year. She withdrew everything and never went back.",
+      "\"Many traders in the market are complaining about banks.\"",
+      "She believes the government can freeze digital accounts. She believes banks can take her money. She distrusts mobile money. In the markets, a single bad experience becomes a story. A story becomes a warning. A warning becomes consensus. One trader's blocked account becomes every trader's reason to stay invisible.",
+      "The behaviour is real. Jenefa keeps her money in cash, at home, outside every system designed to serve her. She is invisible to every bank, every lender, every credit bureau. She does not appear in any financial dataset. She is one of the 21 million Ugandans that the banking system has on its books and cannot see.",
+      "She wants to expand. Add charcoal to her inventory. She needs UGX 100,000 for a single sack. Twenty-eight dollars. She cannot access it because she has made herself invisible to every institution that could provide it.",
+      "She is creditworthy by any behavioural measure. She works seven days a week. She manages stock, cash flow, and customers. She has never missed a commitment to her suppliers. The working capital she needs is smaller than a single mobile money transaction fee on a large transfer.",
+      "Telcos cannot help her. Mobile money moves cash between phones. It does not build a credit file. It does not score her. It does not connect her to a lender who can see that she repays, that she saves, that she shows up every day. The $2 trillion mobile money industry processes transactions. It does not create financial identities.",
+      "Jenefa does not need financial literacy training. She does not need a savings app. She needs to learn one thing: that depositing her cash into a system she trusts qualifies her for the working capital she already deserves. A transaction history is a credit file. A credit file is a loan application. A loan application is UGX 500,000 to scale her business.",
+      "The relationship comes first. The product comes second. Jenefa will not download an app because a billboard told her to. She will use a system when someone she trusts tells her it is safe, shows her it works, and stands next to her the first time she tries it. Trust is the infrastructure that every other layer is built on."
+    ],
+    "cta": {
+      "label": "Read the full thesis",
+      "link": "/whitepaper"
+    }
+  }
+]
